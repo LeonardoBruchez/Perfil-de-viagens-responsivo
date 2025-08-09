@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  margin-bottom: 3.25rem;
+
+  & img:nth-child(1) {
+    width: 10.125rem;
+    height: 2rem;
+  }
+
+  .group-image {
+    display: flex;
+    margin-left: auto;
+    gap: 1rem;
+    align-items: center;
+
+    & img:nth-child(1) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    
+    & img:nth-child(3) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
+@media (width >= 80em) {
+
+  & nav {
+    margin-bottom: 3.5rem;
+  }
+  & .nav-text {
+    display: flex;
+    gap: 28px;
+    color: var(--text-color-secondary);
+  }
+}

@@ -1,0 +1,28 @@
+footer {
+  color: var(--text-color-secondary);
+  font: var(--text-md);
+  justify-content: center;
+  & >span {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  & >div {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (width >= 80em) {
+ footer {
+  justify-content: space-between;
+  margin-block: 3rem 1.59375rem;
+  & >span {
+    margin-top: 0;
+  }
+
+  & >div {
+    margin-bottom: 0;
+  }
+
+ }
+}

@@ -1,0 +1,50 @@
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 80em) {
+  .desktop-only {
+    display: initial;
+  }
+}
+
+
+
+.even-column {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (width >=80em) {
+  .even-column {
+    grid-auto-flow: column;
+  }
+}
+
+
+.container {
+  margin-inline: auto;
+  --max-width:360px;
+  width: min(var(--max-width), 100% - var(--px-base) * 2);
+}
+
+
+.py-md {
+  padding-block: var(--py-md);
+}
+
+.px-base {
+  padding-inline: var(--px-base);
+}
+
+
+ul[role="list"] {
+ list-style: none;
+}
+
+@media (width >= 80em ) {
+  & .container {
+    --max-width:80rem;
+  }
+}
+
