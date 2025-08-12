@@ -1,0 +1,21 @@
+header {
+
+  & .menu-bar {
+    display: flex;
+    align-items: start;
+    gap: .5rem;
+  }
+  
+ & h1 {
+  margin: auto;
+  font: 400 .9375/ var(--ff);  
+  color: var(--brand-color-light);
+ }
+
+ & .search-bar {
+  display: flex;
+  align-items: start;
+  gap: .5rem;
+
+ }
+}
