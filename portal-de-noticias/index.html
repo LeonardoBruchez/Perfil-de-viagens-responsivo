@@ -10,20 +10,73 @@
   <title>Portal de notícias</title>
 </head>
 <body>
-  <main>
+  <main class="px-md">
     <div class="main-container">
-      <header class="flex py-md px-md">
-        <div class="menu-bar">
-          <img src="assets/icons/list.svg" alt="">
-          <span class="desktop-only">Menu</span>
+      <header class="py-md">
+        <div class="flex">
+          <div class="menu-bar">
+            <img src="assets/icons/list.svg" alt="">
+            <strong class="desktop-only">Menu</strong>
+          </div>
+          <img class="desktop-only" src="assets/logo.svg" alt="">
+          <img class="mobile-only" src="assets/logo-sm.svg" alt="">
+          <div class="search-bar">
+            <strong class="desktop-only">Buscar</strong>
+            <img src="assets/icons/magnifyingGlass.svg" alt="">
+          </div>
         </div>
-        <h1>TECH NEWS</h1>
-        <div class="search-bar">
-          <span class="desktop-only">Buscar</span>
-          <img src="assets/icons/magnifyingGlass.svg" alt="">
-        </div>
-        <nav></nav>
+        <nav class="flex py-sm">
+          <a href="#">Inteligência Artificial</a>
+          <a href="#">Blockchain</a>
+          <a href="#">Hologramas</a>
+          <a href="#" class="desktop-only">Internet</a>
+          <a href="#" class="desktop-only">Vestíveis</a>
+          <a href="#" class="desktop-only">Realidade aumentada</a>
+          <a href="#" class="desktop-only">Realidade virtual</a>
+        </nav>
       </header>
+      <section id="featured">
+        <figure class="card">
+          <img src="assets/Image 01.png" alt="">
+          <figcaption>
+            <span>Robótica</span>
+            <h2 class="desktop-only">Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e eficiência nas residências.</h2>
+            <h2 class="mobile-only">Robôs domésticos começam a ser adotados para tarefas...</h2>
+          </figcaption>
+        </figure>
+
+        <div class="grid grid-cols-2">
+          <figure class="card">
+            <img src="assets/Image 02.png" alt="">
+            <figcaption>
+              <span>Hologramas</span>
+              <h2>Novo Smartphone Projetor 3D chega ao mercado, transformando a forma como vemos nossas telas!</h2>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="assets/Image 03.png" alt="">
+            <figcaption>
+              <span>Internet</span>
+              <h2>Tecnologia 6G chega às metrópoles brasileiras, prometendo revolucionar a forma como vivemos e nos comunicamos.</h2>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="assets/Image 04.png" alt="">
+            <figcaption>
+              <span>Vestíveis</span>
+              <h2>Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o bem-estar pessoal.</h2>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="assets/Image 05.png" alt="">
+            <figcaption>
+              <span>Realidade Virtual</span>
+              <h2>Escolas adotam a tecnologia VR para proporcionar experiências imersivas, transformando a aprendizagem tradicional.</h2>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
     </div>
   </main>
 </body>

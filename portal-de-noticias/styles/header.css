@@ -2,20 +2,40 @@ header {
 
   & .menu-bar {
     display: flex;
-    align-items: start;
+    align-items: center;
     gap: .5rem;
   }
   
- & h1 {
+ & img {
   margin: auto;
-  font: 400 .9375/ var(--ff);  
-  color: var(--brand-color-light);
  }
 
  & .search-bar {
   display: flex;
-  align-items: start;
+  align-items: center;
   gap: .5rem;
-
  }
+
+ & nav {
+  justify-content: center;
+  gap: 1.4rem;
+  border-block: 1px solid var(--stroke-color);
+  margin-top: 1rem;
+
+  & a {
+    font: var(--span);
+  }
+ }
+}
+
+@media (width >=80em) {
+  header {
+    & h1 {
+      font: 400 1.5rem/100% "Archivo Black", sans-serif;
+    }
+    & nav {
+      gap: 5.97rem;
+      margin-top: 1.25rem;
+    }
+  }
 }
